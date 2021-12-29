@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
+import 'constant.dart';
 
 void main() {
   runApp(const Welcome());
 }
-
-const colorBackground = Color(0xff2F847C);
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -17,12 +16,14 @@ class Welcome extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text(
-            'MangaPad',
-            style: TextStyle(
-              fontSize: 28,
-              color: Colors.black,
-              fontFamily: 'Montserrat-bold',
+          title: const Center(
+            child: Text(
+              'MangaPad',
+              style: TextStyle(
+                fontSize: 28,
+                color: Colors.black,
+                fontFamily: 'Montserrat-bold',
+              ),
             ),
           ),
           backgroundColor: colorBackground,
