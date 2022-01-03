@@ -15,6 +15,7 @@ class _MangaQuizPageState extends State<MangaQuizPage> {
   @override
   Widget build(BuildContext context) {
     return Myapp(
+      pageName: "Manga Quiz",
       page: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -23,11 +24,11 @@ class _MangaQuizPageState extends State<MangaQuizPage> {
               height: 3,
             ),
             Text(
-              'fait ton Choisi ',
+              'Fait ton Choisi ',
               style: styleHeadings,
             ),
             ButtonText(
-              mangaText: 'attack on titan ',
+              mangaText: 'Attack on titan',
             ),
             ButtonText(
               mangaText: 'Demon Slayer',
@@ -36,10 +37,10 @@ class _MangaQuizPageState extends State<MangaQuizPage> {
               mangaText: 'Black Clover',
             ),
             ButtonText(
-              mangaText: 'Bleach ',
+              mangaText: 'Bleach',
             ),
             ButtonText(
-              mangaText: 'Hunter x Hunter ',
+              mangaText: 'Hunter x Hunter',
             ),
             ButtonText(
               mangaText: 'Jujutsu Kaisen',
@@ -51,7 +52,7 @@ class _MangaQuizPageState extends State<MangaQuizPage> {
               mangaText: 'Naruto',
             ),
             ButtonText(
-              mangaText: 'One piece ',
+              mangaText: 'One piece',
             ),
             ButtonText(
               mangaText: 'Tokyo Revenger',
@@ -69,7 +70,8 @@ class ButtonText extends StatelessWidget {
   const ButtonText({required this.mangaText});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return ButtonTheme(
+      minWidth: 220,
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
@@ -82,7 +84,7 @@ class ButtonText extends StatelessWidget {
             }),
           );
         },
-        color: Color(0xff2F847C),
+        color: const Color(0xff2F847C),
         child: Text(
           mangaText,
           style: styleText,

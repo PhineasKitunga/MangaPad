@@ -14,6 +14,7 @@ class _NiveauState extends State<Niveau> {
   @override
   Widget build(BuildContext context) {
     return Myapp(
+      pageName: 'Niveau',
       page: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

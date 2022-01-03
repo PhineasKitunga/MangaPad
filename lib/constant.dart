@@ -13,3 +13,9 @@ const styleText = TextStyle(
   color: Colors.white,
   fontFamily: 'Montserrat-regular',
 );
+
+const textFontBlanc = TextStyle(
+  fontSize: 20,
+  color: Colors.black,
+  fontFamily: 'Montserrat-regular',
+);

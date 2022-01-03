@@ -16,17 +16,16 @@ class Welcome extends StatelessWidget {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
-          title: const Center(
-            child: Text(
-              'MangaPad',
-              style: TextStyle(
-                fontSize: 28,
-                color: Colors.black,
-                fontFamily: 'Montserrat-bold',
-              ),
+          title: Text(
+            'MangaPad',
+            style: TextStyle(
+              fontSize: 28,
+              color: Colors.black,
+              fontFamily: 'Montserrat-bold',
             ),
           ),
           backgroundColor: colorBackground,
+          centerTitle: true,
         ),
         body: const HomeScreen(),
       ),

@@ -37,18 +37,24 @@ class _AmourState extends State<Amour> {
                   ],
                 ),
                 SizedBox(
-                  height: 200,
+                  height: 60,
                   child: ListView.builder(
-                    itemCount: 10,
+                    itemCount: 9,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) => Container(
-                      height: 100,
+                      height: 30,
                       margin: EdgeInsets.all(10),
-                      width: 100,
-                      child: Center(
-                        child: Text("Card $index"),
+                      width: 110,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.white,
                       ),
-                      color: Colors.green,
+                      child: Center(
+                        child: Text(
+                          "Card",
+                          style: textFontBlanc,
+                        ),
+                      ),
                     ),
                   ),
                 ),

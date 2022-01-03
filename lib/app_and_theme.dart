@@ -4,7 +4,8 @@ const colorBackground = Color(0xff2F847C);
 
 class Myapp extends StatelessWidget {
   final Widget page;
-  Myapp({required this.page});
+  final String pageName;
+  Myapp({required this.page, required this.pageName});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +20,8 @@ class Myapp extends StatelessWidget {
             },
             icon: Icon(Icons.arrow_back),
           ),
-          title: const Text(
-            'MangaPad',
+          title: Text(
+            pageName,
             style: TextStyle(
               fontSize: 28,
               color: Colors.black,
@@ -28,6 +29,7 @@ class Myapp extends StatelessWidget {
             ),
           ),
           backgroundColor: colorBackground,
+          elevation: 12,
         ),
         body: page,
       ),
